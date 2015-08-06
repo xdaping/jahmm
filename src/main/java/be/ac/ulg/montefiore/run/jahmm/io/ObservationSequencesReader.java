@@ -128,9 +128,9 @@ public class ObservationSequencesReader
 			}
 		} while (st.ttype != StreamTokenizer.TT_EOL &&
 				st.ttype != StreamTokenizer.TT_EOF);
-		
-		if (st.ttype == StreamTokenizer.TT_EOF)
-			throw new FileFormatException("Unexpected token: EOF"); 
+//xdaping  		
+//		if (st.ttype == StreamTokenizer.TT_EOF)
+//			throw new FileFormatException("Unexpected token: EOF"); 
 		
 		return sequence;
 	}
